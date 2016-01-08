@@ -1,0 +1,19 @@
+<div id="{{widgetId}}">
+
+    <h1>{{fullName}}</h1>
+    <button class="btn btn-default js-clickme">Click me</button>
+    <button btn btn-default js-dontclickme">Danger!</button>
+
+    <table>
+        <tr>
+            {{#publicationItems}}
+                <!-- the curlybraces and dot print out each array element, without this non of the array elements would be printed -->
+                {{{.}}}
+                <h3>testing</h3>
+            {{/publicationItems}}
+
+        </tr>
+
+    </table>
+
+</div>
